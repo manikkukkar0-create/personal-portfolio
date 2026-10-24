@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Manik Kukkar, a B.Tech Computer Science student at JECRC University."
+    />
+    <title>Manik Kukkar | Personal Portfolio</title>
+    <!-- Styles stay in style.css so the page is easy to maintain. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link helps keyboard users jump past the navigation. -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home">Manik Kukkar</a>
+
+        <!-- Shown on small screens. JavaScript opens and closes the menu. -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Theme choice is saved in localStorage by script.js. -->
+        <button class="theme-toggle" type="button" aria-pressed="true">
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home">
+        <div class="container">
+          <p class="eyebrow">B.Tech CSE · Second year</p>
+          <h1>Manik Kukkar</h1>
+          <p class="hero-lead">
+            I am a second-year B.Tech student in Computer Science and Engineering
+            at JECRC University, Jaipur. I am building this portfolio as a
+            college assessment project and I am learning web development as I
+            go. Expected graduation: 2029.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <p>
+            I am an aspiring web developer focused on learning HTML, CSS, and
+            JavaScript, along with programming fundamentals. This site is an
+            honest first version of my work: it shows what I am studying and
+            the course projects I have completed so far.
+          </p>
+
+          <div class="about-grid">
+            <article class="info-card">
+              <h3>Education</h3>
+              <ul class="detail-list">
+                <li>B.Tech in Computer Science and Engineering</li>
+                <li>JECRC University, Jaipur</li>
+                <li>Second year · expected graduation 2029</li>
+                <li>CGPA: 8.0</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <h3>Background</h3>
+              <p>
+                Through coursework I have practised basic programming, debugging,
+                and small web applications. I am interested in becoming a web
+                developer and I use this portfolio to practise clear layout,
+                accessible navigation, and simple JavaScript features.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <p>
+            These are technologies I have studied or am currently learning. I
+            am still building fluency, so this list is a learning snapshot
+            rather than a claim of professional expertise.
+          </p>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>
+            Five course and practice projects. None of these are claimed as
+            live deployments. Where a GitHub or demo link is not ready yet,
+            the card says so clearly.
+          </p>
+
+          <div class="search-bar">
+            <label for="project-search">Search projects</label>
+            <input
+              id="project-search"
+              type="search"
+              name="project-search"
+              placeholder="Try Python, Quiz, or Book"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="no-results" id="no-projects" hidden>
+            No projects match your search. Try another word, such as Python,
+            Quiz, or Book.
+          </p>
+
+          <div class="project-grid">
+            <!-- data-search helps the filter find words even if they are split across the card. -->
+            <article
+              class="project-card"
+              data-search="python programs collection factorial fibonacci structure dictionary conversion"
+            >
+              <h3>Python Programs Collection</h3>
+              <p>
+                A small set of Python practice programs: factorial, Fibonacci,
+                and converting a structure to a dictionary.
+              </p>
+              <p class="tech"><span>Python</span></p>
+              <p class="project-link-note">
+                Project URL: not added yet — replace this note with your
+                repository link when you have one.
+              </p>
+            </article>
+
+            <article
+              class="project-card"
+              data-search="messy python code improvement ai assistance"
+            >
+              <h3>Messy Python Code Improvement</h3>
+              <p>
+                An exercise in reading messy Python code and improving it with
+                AI assistance, focusing on clearer structure and readability.
+              </p>
+              <p class="tech"><span>Python</span></p>
+              <p class="project-link-note">
+                Project URL: not added yet — replace this note with your
+                repository link when you have one.
+              </p>
+            </article>
+
+            <article
+              class="project-card"
+              data-search="bug fixing using cursor ai debugging incorrect program"
+            >
+              <h3>Bug Fixing Using Cursor AI</h3>
+              <p>
+                A debugging exercise: finding mistakes in an incorrect program
+                and correcting them with help from Cursor AI.
+              </p>
+              <p class="tech"><span>Debugging</span> <span>Cursor AI</span></p>
+              <p class="project-link-note">
+                Project URL: not added yet — replace this note with your
+                repository link when you have one.
+              </p>
+            </article>
+
+            <article
+              class="project-card"
+              data-search="interactive quiz application lecture 10 javascript html css"
+            >
+              <h3>Interactive Quiz Application</h3>
+              <p>
+                A quiz application developed in Lecture 10, using web
+                technologies to ask questions and show answers in the browser.
+              </p>
+              <p class="tech"><span>HTML</span> <span>CSS</span> <span>JavaScript</span></p>
+              <p class="project-link-note">
+                Project URL: not added yet — replace this note with your
+                repository link when you have one.
+              </p>
+            </article>
+
+            <article
+              class="project-card"
+              data-search="book reading list application lecture 11 javascript html css"
+            >
+              <h3>Book Reading List Application</h3>
+              <p>
+                A book reading list application developed in Lecture 11, for
+                keeping track of books in a simple web page.
+              </p>
+              <p class="tech"><span>HTML</span> <span>CSS</span> <span>JavaScript</span></p>
+              <p class="project-link-note">
+                Project URL: not added yet — replace this note with your
+                repository link when you have one.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            If you would like to get in touch about coursework or web
+            development practice, you can email me or visit my GitHub profile.
+          </p>
+          <ul class="contact-list">
+            <li>
+              Email:
+              <a href="mailto:manikkukkar0@gmail.com">manikkukkar0@gmail.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a
+                href="https://github.com/manikkukkar0-create"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/manikkukkar0-create</a
+              >
+            </li>
+          </ul>
+          <p class="hint">
+            A real API-based chatbot will be added later with a secure backend.
+            This first version does not include a chatbot and does not store
+            any API keys.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Manik Kukkar · Personal Portfolio Website</p>
+      </div>
+    </footer>
+
+    <!-- Behaviour stays in script.js: menu, theme, and project search. -->
+    <script src="script.js"></script>
+  </body>
+</html>
