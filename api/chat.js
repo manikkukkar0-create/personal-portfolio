@@ -28,14 +28,14 @@
       reply = "Manik Kukkar is a passionate 2nd-year B.Tech Computer Science and Engineering student at JECRC University, Jaipur. He focuses on full-stack web development and software engineering.";
     } else if (message.includes('skill') || message.includes('tech') || message.includes('language') || message.includes('stack')) {
       reply = "Manik's technical skills include Python, HTML5, CSS3, JavaScript (ES6+), C++, C, Git, GitHub, Cursor AI, and responsive web design.";
-    } else if (message.includes('project') || message.includes('work') || message.includes('built')) {
-      reply = "Manik has built several projects: a Python Programs Collection, Messy Python Code Improvement using AI, Bug Fixing with Cursor AI, an Interactive Quiz Application, and a Book Reading List Application.";
+    } else if (message.includes('project') || message.includes('work') || message.includes('built') || message.includes('repo')) {
+      reply = "Manik has 6 active repositories on GitHub: 1) personal-portfolio, 2) python-programs-collection, 3) messy-python-code-improvement, 4) bug-fixing-using-cursor-ai, 5) interactive-quiz-application, and 6) book-reading-list-application. Explore them all at https://github.com/manikkukkar0-create.";
     } else if (message.includes('college') || message.includes('university') || message.includes('study') || message.includes('degree') || message.includes('education') || message.includes('cgpa')) {
       reply = "Manik is pursuing B.Tech in CSE at JECRC University, Jaipur (currently in second year, expected 2029) with a strong academic CGPA of 8.0.";
     } else if (message.includes('contact') || message.includes('email') || message.includes('mail') || message.includes('hire') || message.includes('reach')) {
-      reply = "You can reach Manik directly via email at manikkukkar0@gmail.com, or check out his code on GitHub at https://github.com/manikkukkar0-create/personal-portfolio.";
-    } else if (message.includes('github') || message.includes('repo')) {
-      reply = "Manik's GitHub profile and portfolio repository can be found at: https://github.com/manikkukkar0-create/personal-portfolio";
+      reply = "You can reach Manik directly via email at manikkukkar0@gmail.com, or check out his code on GitHub at https://github.com/manikkukkar0-create.";
+    } else if (message.includes('github')) {
+      reply = "Manik's GitHub profile and repositories can be found at: https://github.com/manikkukkar0-create";
     }
 
     return res.status(200).json({ reply });

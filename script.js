@@ -8,35 +8,35 @@ const projects = [
     title: 'Python Programs Collection',
     description: 'A collection of core Python programs covering factorial calculation, Fibonacci sequence, and structure-to-dictionary conversion.',
     tech: ['Python', 'Problem Solving'],
-    github: 'https://github.com/manikkukkar0-create/personal-portfolio',
+    github: 'https://github.com/manikkukkar0-create/python-programs-collection',
     live: ''
   },
   {
     title: 'Messy Python Code Improvement',
     description: 'Refactored messy Python scripts with AI assistance, focusing on code readability, modular structure, and optimal logic.',
     tech: ['Python', 'AI'],
-    github: 'https://github.com/manikkukkar0-create/personal-portfolio',
+    github: 'https://github.com/manikkukkar0-create/messy-python-code-improvement',
     live: ''
   },
   {
     title: 'Bug Fixing Using Cursor AI',
     description: 'Debugged and corrected logic flaws and runtime issues using Cursor AI as an intelligent assistant during development.',
     tech: ['Python', 'Cursor AI', 'Debugging'],
-    github: 'https://github.com/manikkukkar0-create/personal-portfolio',
+    github: 'https://github.com/manikkukkar0-create/bug-fixing-using-cursor-ai',
     live: ''
   },
   {
     title: 'Interactive Quiz Application',
     description: 'Interactive quiz application built with HTML, CSS, and JavaScript featuring dynamic questions and score tracking.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/manikkukkar0-create/personal-portfolio',
+    github: 'https://github.com/manikkukkar0-create/interactive-quiz-application',
     live: ''
   },
   {
     title: 'Book Reading List Application',
     description: 'Web application designed for tracking book reading progress, wishlist management, and reading goals.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/manikkukkar0-create/personal-portfolio',
+    github: 'https://github.com/manikkukkar0-create/book-reading-list-application',
     live: ''
   }
 ];
@@ -213,17 +213,17 @@ function getLocalAssistantReply(message) {
   if (query.includes('skill') || query.includes('tech') || query.includes('stack') || query.includes('language')) {
     return "Manik is proficient in Python, HTML5, CSS3, JavaScript (ES6+), C++, C, Git, GitHub, Cursor AI, and responsive web design.";
   }
-  if (query.includes('project') || query.includes('work') || query.includes('built')) {
-    return "Manik's highlighted projects include: 1) Python Programs Collection, 2) Messy Python Code Improvement using AI, 3) Bug Fixing with Cursor AI, 4) Interactive Quiz Application, and 5) Book Reading List Application.";
+  if (query.includes('project') || query.includes('work') || query.includes('built') || query.includes('repo')) {
+    return "Manik has built 6 projects across dedicated repositories: 1) personal-portfolio, 2) python-programs-collection, 3) messy-python-code-improvement, 4) bug-fixing-using-cursor-ai, 5) interactive-quiz-application, and 6) book-reading-list-application. Explore them all at https://github.com/manikkukkar0-create.";
   }
   if (query.includes('college') || query.includes('university') || query.includes('study') || query.includes('education') || query.includes('cgpa') || query.includes('degree')) {
     return "Manik is studying B.Tech in Computer Science and Engineering at JECRC University, Jaipur. He is in his 2nd year (Class of 2029) and currently maintains an impressive CGPA of 8.0.";
   }
   if (query.includes('contact') || query.includes('email') || query.includes('mail') || query.includes('reach') || query.includes('hire')) {
-    return "You can get in touch with Manik directly via email at manikkukkar0@gmail.com, or check out his GitHub at https://github.com/manikkukkar0-create/personal-portfolio.";
+    return "You can get in touch with Manik directly via email at manikkukkar0@gmail.com, or check out his GitHub at https://github.com/manikkukkar0-create.";
   }
-  if (query.includes('github') || query.includes('repo')) {
-    return "You can find Manik's GitHub profile and source code at: https://github.com/manikkukkar0-create/personal-portfolio";
+  if (query.includes('github')) {
+    return "You can find all 6 of Manik's repositories on GitHub at: https://github.com/manikkukkar0-create";
   }
 
   return "Manik Kukkar is a B.Tech CSE student at JECRC University, Jaipur with skills in Python, JavaScript, and web development. Feel free to ask about his education, skills, projects, or contact details!";
